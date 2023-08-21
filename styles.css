@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@700;700;800&display=swap');
+
+* {
+    font-family: 'Hanken Grotesk', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(241, 100%, 89%);
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; */
+}
+
+.content1 {
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    text-align: center;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content1 h3 {
+    color: hsl(241, 100%, 89%);
+    font-size: 1rem;
+}
+
+.result {
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.result span {
+    font-size: 40px;
+    color: white;
+    font-weight: 800;
+}
+
+.result p {
+    color: hsl(241, 100%, 89%);
+}
+
+.content1 h2 {
+    color: hsl(221, 100%, 96%);
+    padding-bottom: 10px;
+}
+
+.comment {
+    color: hsl(241, 100%, 89%);
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+
+.content2 {
+    padding: 22px;
+    background-color: white;
+}
+
+.content2 h3 {
+    font-size: 18px;
+    color: hsl(224, 30%, 27%);
+}
+
+.reaction,
+.memory,
+.verbal,
+.visual {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.reaction {
+    background-color: hsla(0, 100%, 67%, .1);
+}
+
+.memory {
+    background-color: hsla(39, 100%, 56%, .2);
+}
+
+.verbal {
+    background-color: hsla(166, 100%, 37%, .1);
+}
+
+.visual {
+    background-color: hsla(234, 85%, 45%, .1);
+}
+
+.reaction-icon-text,
+.memory-icon-text,
+.verbal-icon-text,
+.visual-icon-text {
+    display: flex;
+    gap: 15px;
+}
+
+.reaction-icon-text p {
+    color: hsl(0, 100%, 67%);
+    font-weight: 700;
+}
+
+.memory-icon-text p {
+    color: hsl(39, 100%, 56%);
+    font-weight: 700;
+}
+
+.verbal-icon-text p {
+    color: hsl(166, 100%, 37%);
+    font-weight: 700;
+}
+
+.visual-icon-text p {
+    color: hsl(234, 85%, 45%);
+    font-weight: 700;
+}
+
+.continue {
+    padding: 15px;
+    width: 100%;
+    font-size: 17px;
+    color: white;
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.continue:hover {
+    background-color: hsl(241, 81%, 54%);
+}
+
+@media (min-width: 768px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .content1,
+    .content2 {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .reaction,
+    .memory,
+    .verbal,
+    .visual {
+        padding: 12px;
+        margin: 12px 0;
+    }
+
+    .reaction p,
+    .memory p,
+    .verbal p,
+    .visual p {
+        font-size: 14px;
+    }
+
+    .reaction-icon-text p,
+    .memory-icon-text p,
+    .verbal-icon-text p,
+    .visual-icon-text p {
+        font-size: 14px;
+    }
+
+    .result {
+        margin: 25px;
+    }
+
+    .continue {
+        font-size: 14px;
+    }
+}
